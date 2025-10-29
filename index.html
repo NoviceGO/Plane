@@ -35,6 +35,19 @@
 
 <script src="src/polyfills.bundle.5adbf.js" charset="utf-8"> </script>    
 
+<script>
+  // 修复 SystemJS 配置
+  SystemJS.config({
+    packages: {
+      '/': {
+        defaultExtension: 'js'
+      }
+    },
+    map: {
+      'cc': './cocos-js/cc.12a96.js'
+    }
+  });
+</script>
 
 <!-- SystemJS support. -->
 <script src="src/system.bundle.543e6.js" charset="utf-8"> </script>
